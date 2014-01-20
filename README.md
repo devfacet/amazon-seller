@@ -27,12 +27,12 @@ npm test
 ```javascript
 var mAmzSel = require('amazon-seller');
 
-mAmzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplaceId: "US"}, function(err, data) {
+mAmzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplace: "US"}, function(err, data) {
   if(!err) {
     console.log(JSON.stringify(data, null, 2));
   }
   else {
-    console.log("ERROR!:" + err);
+    console.log("ERROR!:" + JSON.stringify(err, null, 2));
   }
 });
 
