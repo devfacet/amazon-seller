@@ -2,7 +2,7 @@
 
   [amazon-seller](http://github.com/cmfatih/amazon-seller) is a [node.js](http://nodejs.org) module for retrieving Amazon seller information.  
 
-  amazon-seller on [npm registery](http://npmjs.org/package/amazon-seller)
+  amazon-seller on [npm registry](http://npmjs.org/package/amazon-seller)
 
 ### Installation
 
