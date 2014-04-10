@@ -1,17 +1,17 @@
 ## Amazon Seller
 
-  [amazon-seller](http://github.com/cmfatih/amazon-seller) is a [node.js](http://nodejs.org) module for retrieving Amazon seller information.  
+[amazon-seller](http://github.com/cmfatih/amazon-seller) is a [node.js](http://nodejs.org) module for retrieving Amazon seller information.  
 
-  amazon-seller on [npm registry](http://npmjs.org/package/amazon-seller)
+amazon-seller on [npm registry](http://npmjs.org/package/amazon-seller)  
 
 ### Installation
 
-For latest published version
+For latest release
 ```
 npm install amazon-seller
 ```
 
-or for HEAD version
+For HEAD
 ```
 git clone https://github.com/cmfatih/amazon-seller.git
 ```
@@ -23,7 +23,7 @@ git clone https://github.com/cmfatih/amazon-seller.git
 npm test
 ```
 
-#### Example
+#### Examples
 ```javascript
 var mAmzSel = require('amazon-seller');
 
