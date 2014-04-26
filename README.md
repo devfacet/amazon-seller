@@ -33,7 +33,7 @@ amzSel.sellerInfo({sellerId: 'A3TYU8WJN37NYT', marketplace: 'US'}, function(err,
   if(!err) {
     console.log(JSON.stringify(data, null, 2));
   } else {
-    console.log(err);
+    console.log(JSON.stringify(err, null, 2));
   }
 });
 
