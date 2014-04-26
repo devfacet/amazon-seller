@@ -16,6 +16,7 @@ For HEAD
 ```
 git clone https://github.com/cmfatih/amazon-seller.git
 ```
+[![Build Status](https://travis-ci.org/cmfatih/amazon-seller.svg?branch=master)](https://travis-ci.org/cmfatih/amazon-seller)
 
 ### Usage
 
@@ -28,7 +29,7 @@ npm test
 ```javascript
 var amzSel = require('amazon-seller');
 
-amzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplace: "US"}, function(err, data) {
+amzSel.sellerInfo({sellerId: 'A3TYU8WJN37NYT', marketplace: 'US'}, function(err, data) {
   if(!err) {
     console.log(JSON.stringify(data, null, 2));
   } else {
