@@ -26,14 +26,13 @@ npm test
 
 #### Examples
 ```javascript
-var mAmzSel = require('amazon-seller');
+var amzSel = require('amazon-seller');
 
-mAmzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplace: "US"}, function(err, data) {
+amzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplace: "US"}, function(err, data) {
   if(!err) {
     console.log(JSON.stringify(data, null, 2));
-  }
-  else {
-    console.log("ERROR!:" + JSON.stringify(err, null, 2));
+  } else {
+    console.log(err);
   }
 });
 
@@ -48,31 +47,31 @@ mAmzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplace: "US"}, function(err
   },
   "feedback": {
     "star": 4.8,
-    "rating": 25771,
+    "rating": 29228,
     "history": {
       "d30": {
-        "positive": "93%",
-        "neutral": "2%",
-        "negative": "5%",
-        "rating": 1389
+        "positive": "90%",
+        "neutral": "3%",
+        "negative": "7%",
+        "rating": 658
       },
       "d90": {
         "positive": "94%",
-        "neutral": "2%",
-        "negative": "3%",
-        "rating": 5366
+        "neutral": "3%",
+        "negative": "4%",
+        "rating": 3289
       },
       "d365": {
         "positive": "95%",
         "neutral": "2%",
         "negative": "3%",
-        "rating": 10868
+        "rating": 11793
       },
       "lifetime": {
         "positive": "96%",
         "neutral": "2%",
         "negative": "2%",
-        "rating": 25771
+        "rating": 29228
       }
     }
   },
