@@ -1,28 +1,42 @@
 // Init reqs
 /* jslint node: true */
+/* global describe: false */
+/* global it: false */
 'use strict';
 
-var mAmzSel   = require('../');
-
-// Init vars
-var gTestList = {
-      SELLERINFO: true
-    }
+var amzSel = require('../'),
+    expect = require('chai').expect
 ;
 
 // Tests
-console.log('test-all.js');
 
-// Test for sellerInfo
-if(gTestList.SELLERINFO === true) {
-  mAmzSel.sellerInfo({sellerId: "A3TYU8WJN37NYT", marketplace: "US"}, function(err, data) {
-    console.log('SELLERINFO:');
+// Test for amazon seller module
+describe('amzSel', function() {
 
-    if(!err) {
-      console.log(JSON.stringify(data, null, 2));
-    }
-    else {
-      console.log("ERROR!:" + JSON.stringify(err, null, 2));
-    }
+  // Init vars
+  var sellerId = 'A3TYU8WJN37NYT',
+      result
+  ;
+
+  // Test for seller info
+  describe('productSearch', function() {
+    it('should get seller info for ' + sellerId, function(done) {
+      amzSel.sellerInfo({sellerId: sellerId, marketplace: 'US'}, function(err, data) {
+        if(err) {
+          done(err.message);
+          return;
+        }
+
+        expect(data).to.have.property('id', sellerId);
+        expect(data.name).to.be.a('string');
+        expect(data.url).to.be.a('object');
+        expect(data.feedback).to.be.a('object');
+        expect(data.marketplace).to.be.a('object');
+        expect(data.marketplace).to.have.property('name', 'US');
+        expect(data.marketplace).to.have.property('country');
+        expect(data.marketplace.country).to.have.property('code', 'US');
+        done();
+      });
+    });
   });
-}
+});
