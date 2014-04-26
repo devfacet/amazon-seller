@@ -35,5 +35,9 @@
     "utilex": "0.2.x",
     "request": "2.x",
     "htmlparser": "1.x"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
   }
 }
