@@ -14,13 +14,11 @@ var amzSel = require('../'),
 describe('amzSel', function() {
 
   // Init vars
-  var sellerId = 'A3TYU8WJN37NYT',
-      result
-  ;
+  var sellerId = 'A3TYU8WJN37NYT';
 
   // Test for seller info
-  describe('productSearch', function() {
-    it('should get seller info for ' + sellerId, function(done) {
+  describe('sellerInfo', function() {
+    it('should get info for ' + sellerId, function(done) {
       amzSel.sellerInfo({sellerId: sellerId, marketplace: 'US'}, function(err, data) {
         if(err) {
           done(err.message);
