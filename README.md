@@ -1,9 +1,10 @@
 ## Amazon Seller
 
-[amazon-seller](http://github.com/cmfatih/amazon-seller) is a [node.js](http://nodejs.org) module for retrieving Amazon seller information.  
+[amazon-seller](http://github.com/cmfatih/amazon-seller) is a Node.js module for 
+retrieving Amazon seller information.  
 
-amazon-seller on [npm registry](http://npmjs.org/package/amazon-seller)  
-[![NPM](https://nodei.co/npm/amazon-seller.png?compact=true)](https://nodei.co/npm/amazon-seller/)
+[![Build Status][travis-image]][travis-url] | [![NPM][npm-image]][npm-url]
+---------- | ----------
 
 ### Installation
 
@@ -16,7 +17,6 @@ For HEAD
 ```
 git clone https://github.com/cmfatih/amazon-seller.git
 ```
-[![Build Status](https://travis-ci.org/cmfatih/amazon-seller.svg?branch=master)](https://travis-ci.org/cmfatih/amazon-seller)
 
 ### Usage
 
@@ -98,3 +98,9 @@ For all notable changes see [CHANGELOG.md](https://github.com/cmfatih/amazon-sel
 Copyright (c) 2014 Fatih Cetinkaya (http://github.com/cmfatih/amazon-seller)  
 Licensed under The MIT License (MIT)  
 For the full copyright and license information, please view the LICENSE.txt file.
+
+[npm-url]: http://npmjs.org/package/amazon-seller
+[npm-image]: https://badge.fury.io/js/amazon-seller.png
+
+[travis-url]: https://travis-ci.org/cmfatih/amazon-seller
+[travis-image]: https://travis-ci.org/cmfatih/amazon-seller.svg?branch=master
