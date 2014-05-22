@@ -13,7 +13,6 @@ var amzSel = require('../'),
 // Test for amazon seller module
 describe('amzSel', function() {
 
-  // Init vars
   var sellerId = 'A3TYU8WJN37NYT';
 
   // Test for seller info
