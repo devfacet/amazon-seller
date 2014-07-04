@@ -1,10 +1,8 @@
 ## Amazon Seller
+[![Build Status][travis-image]][travis-url] [![NPM][npm-image]][npm-url]
 
 [amazon-seller](http://github.com/cmfatih/amazon-seller) is a Node.js module for 
 retrieving Amazon seller information.  
-
-[![Build Status][travis-image]][travis-url] | [![NPM][npm-image]][npm-url]
----------- | ----------
 
 ### Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "amazon-seller",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Amazon Seller module can be used for retrieving Amazon seller information.",
   "keywords": [
     "amazon",
@@ -24,12 +24,12 @@
     "url": "http://github.com/cmfatih"
   },
   "contributors": [],
-  "main": "./lib/amazon-seller.js",
+  "main": "lib/amazon-seller.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --timeout 5000 --slow 2000 --reporter spec test/test-all.js"
+    "test": "node node_modules/mocha/bin/mocha --timeout 5000 --slow 2000 --reporter spec test/test-all.js"
   },
   "engines": [
-    "node >= 0.10.21"
+    "node >= 0.10.0"
   ],
   "dependencies": {
     "utilex": "0.2.x",
@@ -37,7 +37,7 @@
     "htmlparser": "1.x"
   },
   "devDependencies": {
-    "chai": "*",
-    "mocha": "*"
+    "mocha": "1.20.x",
+    "chai": "1.9.x"
   }
 }
