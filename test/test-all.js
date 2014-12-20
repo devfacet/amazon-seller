@@ -1,17 +1,15 @@
 // Init reqs
 /* jslint node: true */
-/* global describe: false */
-/* global it: false */
+/* global describe: false, it: false */
 'use strict';
 
 var amzSel = require('../'),
-    expect = require('chai').expect
-;
+    expect = require('chai').expect;
 
 // Tests
 
-// Test for amazon seller module
-describe('amzSel', function() {
+// Test the module
+describe('amazon-seller', function() {
 
   var sellerId = 'A3TYU8WJN37NYT';
 
@@ -26,12 +24,21 @@ describe('amzSel', function() {
 
         expect(data).to.have.property('id', sellerId);
         expect(data.name).to.be.a('string');
+        expect(data.name).to.contain('YoYo.com');
         expect(data.url).to.be.a('object');
+        expect(data.url).to.have.property('mobile');
+        expect(data.url).to.have.property('full');
         expect(data.feedback).to.be.a('object');
+        expect(data.feedback).to.have.property('star').to.be.a('number');
+        expect(data.feedback).to.have.property('rating').to.be.a('number');
+        expect(data.feedback).to.have.property('history').to.be.a('object');
         expect(data.marketplace).to.be.a('object');
+        expect(data.marketplace).to.have.property('id', 'ATVPDKIKX0DER');
         expect(data.marketplace).to.have.property('name', 'US');
+        expect(data.marketplace).to.have.property('url', 'www.amazon.com');
         expect(data.marketplace).to.have.property('country');
         expect(data.marketplace.country).to.have.property('code', 'US');
+        expect(data.marketplace.country).to.have.property('name', 'United States');
         done();
       });
     });
