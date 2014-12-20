@@ -1,6 +1,6 @@
 {
   "name": "amazon-seller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Amazon Seller module can be used for retrieving Amazon seller information.",
   "keywords": [
     "amazon",
@@ -32,12 +32,12 @@
     "node >= 0.10.0"
   ],
   "dependencies": {
-    "utilex": "0.2.x",
-    "request": "2.x",
-    "htmlparser": "1.x"
+    "utilex": "~1.1.0",
+    "request": "~2.51.0",
+    "htmlparser": "~1.7.7"
   },
   "devDependencies": {
-    "mocha": "1.20.x",
-    "chai": "1.9.x"
+    "mocha": "~2.0.1",
+    "chai": "~1.10.0"
   }
 }
