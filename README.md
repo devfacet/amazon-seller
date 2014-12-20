@@ -1,19 +1,18 @@
 ## Amazon Seller
 [![Build Status][travis-image]][travis-url] [![NPM][npm-image]][npm-url]
 
-[amazon-seller](http://github.com/cmfatih/amazon-seller) is a Node.js module for 
-retrieving Amazon seller information.  
+[amazon-seller](http://github.com/cmfatih/amazon-seller) is a Node.js module for retrieving Amazon seller information.
 
 ### Installation
 
-For latest release
 ```
+# For latest release
 npm install amazon-seller
-```
 
-For HEAD
-```
+# For HEAD
 git clone https://github.com/cmfatih/amazon-seller.git
+cd utilex
+npm install
 ```
 
 ### Usage
@@ -26,6 +25,10 @@ npm test
 #### Examples
 ```javascript
 var amzSel = require('amazon-seller');
+
+// Options:
+// sellerId:    Seller ID
+// marketplace: Marketplace code
 
 amzSel.sellerInfo({sellerId: 'A3TYU8WJN37NYT', marketplace: 'US'}, function(err, data) {
   if(!err) {
@@ -93,7 +96,6 @@ For all notable changes see [CHANGELOG.md](https://github.com/cmfatih/amazon-sel
 
 ### License
 
-Copyright (c) 2014 Fatih Cetinkaya (http://github.com/cmfatih/amazon-seller)  
 Licensed under The MIT License (MIT)  
 For the full copyright and license information, please view the LICENSE.txt file.
 
