@@ -1,6 +1,6 @@
 {
   "name": "amazon-seller",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Amazon Seller is a module for retrieving Amazon seller information.",
   "keywords": [
     "amazon",
