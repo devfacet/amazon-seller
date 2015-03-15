@@ -1,4 +1,3 @@
-// Init reqs
 /* jslint node: true */
 /* global describe: false, it: false */
 'use strict';
@@ -8,13 +7,13 @@ var amzSel = require('../'),
 
 // Tests
 
-// Test the module
 describe('amazon-seller', function() {
 
   var sellerId = 'A3TYU8WJN37NYT';
 
   // Test for seller info
   describe('sellerInfo', function() {
+
     it('should get info for ' + sellerId, function(done) {
       amzSel.sellerInfo({sellerId: sellerId, marketplace: 'US'}, function(err, data) {
         if(err) {
@@ -42,5 +41,7 @@ describe('amazon-seller', function() {
         done();
       });
     });
+
   });
+
 });
