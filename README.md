@@ -1,16 +1,16 @@
-## Amazon Seller
+# Amazon Seller
 
 [![NPM][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 Amazon Seller is a module for retrieving Amazon seller information.
 
-### Installation
+## Installation
 
-```
+```bash
 npm install amazon-seller
 ```
 
-### Usage
+## Usage
 
 ```javascript
 var amzSel = require('amazon-seller');
@@ -79,13 +79,13 @@ amzSel.sellerInfo({sellerId: 'A3TYU8WJN37NYT', marketplace: 'US'}, function(err,
 */
 ```
 
-### License
+## License
 
 Licensed under The MIT License (MIT)  
 For the full copyright and license information, please view the LICENSE.txt file.
 
 [npm-url]: http://npmjs.org/package/amazon-seller
-[npm-image]: https://badge.fury.io/js/amazon-seller.png
+[npm-image]: https://badge.fury.io/js/amazon-seller.svg
 
-[travis-url]: https://travis-ci.org/cmfatih/amazon-seller
-[travis-image]: https://travis-ci.org/cmfatih/amazon-seller.svg?branch=master
+[travis-url]: https://travis-ci.org/devfacet/amazon-seller
+[travis-image]: https://travis-ci.org/devfacet/amazon-seller.svg?branch=master
